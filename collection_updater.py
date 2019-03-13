@@ -147,8 +147,9 @@ def main():
 
             if lang == 'en':
                 plex_col_title = plex_col_dict['title'] + ' Collection'
+                plex_col_title2 = plex_col_dict['title']
 
-            if tmdb_col_dict['name'] != plex_col_title:
+            if tmdb_col_dict['name'] != plex_col_title and tmdb_col_dict['name'] != plex_col_title2:
                 print('  Invalid collection, does not match with the TMDB collection: %s' % tmdb_col_dict['name'])
 
                 err_list.append('\r\n> %s' % plex_col_title)
